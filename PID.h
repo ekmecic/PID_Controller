@@ -37,29 +37,16 @@
 // this program.  If not, see <http://www.gnu.org/licenses/>.
 //*********************************************************************************
 
-//
-// Header Guard
-//
-#ifndef PID_CONTROLLER_H
-#define PID_CONTROLLER_H
-
 //*********************************************************************************
 // Headers
 //*********************************************************************************
+#pragma once
 #include <stdbool.h>
 #include <stdint.h>
-
-//
-// C Binding for C++ Compilers
-//
-#ifdef __cplusplus
-extern "C" {
-#endif
 
 //*********************************************************************************
 // Macros and Globals
 //*********************************************************************************
-
 typedef enum { MANUAL, AUTOMATIC } PIDMode;
 
 typedef enum { DIRECT, REVERSE } PIDDirection;
@@ -401,12 +388,3 @@ inline PIDMode PIDModeGet(PIDControl *pid) { return pid->mode; }
 inline PIDDirection PIDDirectionGet(PIDControl *pid) {
   return pid->controllerDirection;
 }
-
-//
-// End of C Binding
-//
-#ifdef __cplusplus
-}
-#endif
-
-#endif // PID_CONTROLLER_H
