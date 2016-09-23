@@ -12,8 +12,11 @@
 // http://brettbeauregard.com/blog/2011/04/improving-the-beginners-pid-introduction/
 // 
 // Revisions can be found here:
-// https://github.com/tcleg
+// https://github.com/ekmecic/PID_Controller
 // 
+//
+// Modified by: Emil Ekmečić
+//
 // Modified by: Trent Cleghorn , <trentoncleghorn@gmail.com>
 // 
 // Copyright (C) Brett Beauregard , <br3ttb@gmail.com>
